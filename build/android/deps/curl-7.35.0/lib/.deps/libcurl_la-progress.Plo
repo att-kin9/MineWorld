@@ -1,0 +1,455 @@
+libcurl_la-progress.lo: progress.c curl_setup.h curl_config.h \
+ ../include/curl/curlbuild.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/types.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stddef.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdint.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/stdint.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/_types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/_types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/_wchar_limits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/android/api-level.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/cdefs.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/cdefs_elf.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/posix_types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/stddef.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/compiler.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/posix_types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/kernel.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/sysmacros.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/inttypes.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/socket.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/socket.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/socket.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/sockios.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/sockios.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/uio.h \
+ ../include/curl/curlrules.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/stdio.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdarg.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/assert.h curl_setup_once.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/stdlib.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/string.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/malloc.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/alloca.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/strings.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/memory.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/ctype.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/errno.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/errno.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/errno.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm-generic/errno.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm-generic/errno-base.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/stat.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/time.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/time.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/stat.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/endian.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/endian.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/endian.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/time.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/siginfo.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm-generic/siginfo.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdbool.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/unistd.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/select.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/signal.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/limits.h \
+ /private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/syslimits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/limits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/limits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/limits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/internal_types.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/limits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/syslimits.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/page.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/signal.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm-generic/signal.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/sys/sysconf.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/capability.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/pathconf.h urldata.h cookie.h \
+ ../include/curl/curl.h ../include/curl/curlver.h \
+ ../include/curl/curlbuild.h ../include/curl/curlrules.h \
+ ../include/curl/easy.h ../include/curl/multi.h ../include/curl/curl.h \
+ ../include/curl/typecheck-gcc.h formdata.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/rsa.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/asn1.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/e_os2.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/opensslconf.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/bio.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/crypto.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/stack.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/safestack.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/opensslv.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ossl_typ.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/symhacks.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/bn.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/x509.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/buffer.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/evp.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/objects.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/obj_mac.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ec.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ecdsa.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ecdh.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dsa.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dh.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/sha.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/x509_vfy.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/lhash.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pkcs7.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pem.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pem2.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/comp.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/hmac.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/kssl.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl2.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl3.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/tls1.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dtls1.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pqueue.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl23.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/err.h \
+ /Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pkcs12.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/netinet/in.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/in.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/asm/byteorder.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/little_endian.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/swab.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/generic.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/in6.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/linux/ipv6.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/netinet/in6.h timeval.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/zlib.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/zconf.h http_chunks.h hostip.h \
+ hash.h llist.h curl_addrinfo.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/netdb.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/arpa/inet.h asyn.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/setjmp.h \
+ /private/tmp/ndk-arm/sysroot/usr/include/machine/setjmp.h splay.h imap.h \
+ pingpong.h pop3.h smtp.h ftp.h file.h ssh.h http.h rtsp.h wildcard.h \
+ multihandle.h sendf.h progress.h ../include/curl/mprintf.h
+
+curl_setup.h:
+
+curl_config.h:
+
+../include/curl/curlbuild.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/types.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stddef.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdint.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/stdint.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/_types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/_types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/_wchar_limits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/android/api-level.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/cdefs.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/cdefs_elf.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/posix_types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/stddef.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/compiler.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/posix_types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/kernel.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/sysmacros.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/inttypes.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/socket.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/socket.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/socket.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/sockios.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/sockios.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/uio.h:
+
+../include/curl/curlrules.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/stdio.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdarg.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/assert.h:
+
+curl_setup_once.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/stdlib.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/string.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/malloc.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/alloca.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/strings.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/memory.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/ctype.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/errno.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/errno.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/errno.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm-generic/errno.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm-generic/errno-base.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/stat.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/time.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/time.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/stat.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/endian.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/endian.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/endian.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/time.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/siginfo.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm-generic/siginfo.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include/stdbool.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/unistd.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/select.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/signal.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/limits.h:
+
+/private/tmp/ndk-arm/lib/gcc/arm-linux-androideabi/4.8/include-fixed/syslimits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/limits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/limits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/limits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/internal_types.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/limits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/syslimits.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/page.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/signal.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm-generic/signal.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/sys/sysconf.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/capability.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/pathconf.h:
+
+urldata.h:
+
+cookie.h:
+
+../include/curl/curl.h:
+
+../include/curl/curlver.h:
+
+../include/curl/curlbuild.h:
+
+../include/curl/curlrules.h:
+
+../include/curl/easy.h:
+
+../include/curl/multi.h:
+
+../include/curl/curl.h:
+
+../include/curl/typecheck-gcc.h:
+
+formdata.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/rsa.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/asn1.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/e_os2.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/opensslconf.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/bio.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/crypto.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/stack.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/safestack.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/opensslv.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ossl_typ.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/symhacks.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/bn.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/x509.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/buffer.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/evp.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/objects.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/obj_mac.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ec.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ecdsa.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ecdh.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dsa.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dh.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/sha.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/x509_vfy.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/lhash.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pkcs7.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pem.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pem2.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/comp.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/hmac.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/kssl.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl2.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl3.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/tls1.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/dtls1.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pqueue.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/ssl23.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/err.h:
+
+/Users/att/2014/projects/minetest/minetest-0.4.10/build/android/deps/openssl-android/include/openssl/pkcs12.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/netinet/in.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/in.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/asm/byteorder.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/little_endian.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/swab.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/byteorder/generic.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/in6.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/linux/ipv6.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/netinet/in6.h:
+
+timeval.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/zlib.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/zconf.h:
+
+http_chunks.h:
+
+hostip.h:
+
+hash.h:
+
+llist.h:
+
+curl_addrinfo.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/netdb.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/arpa/inet.h:
+
+asyn.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/setjmp.h:
+
+/private/tmp/ndk-arm/sysroot/usr/include/machine/setjmp.h:
+
+splay.h:
+
+imap.h:
+
+pingpong.h:
+
+pop3.h:
+
+smtp.h:
+
+ftp.h:
+
+file.h:
+
+ssh.h:
+
+http.h:
+
+rtsp.h:
+
+wildcard.h:
+
+multihandle.h:
+
+sendf.h:
+
+progress.h:
+
+../include/curl/mprintf.h:

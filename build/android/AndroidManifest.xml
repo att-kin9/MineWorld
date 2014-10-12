@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.k1n9.minetest"
+	android:versionCode="5"
+	android:versionName="0.4.10.5"
+	android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="9"/>
+	<uses-feature android:glEsVersion="0x00010000" android:required="true"/>
+	    <!-- Used to avoid sending an ad request if there is no connectivity. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	
+	<application android:icon="@drawable/irr_icon" android:label="MineWorld" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:debuggable="false">
+		<meta-data android:name="com.google.android.gms.games.APP_ID"
+        android:value="@string/app_id" />
+        <meta-data android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+	<activity android:name=".MtNativeActivity"
+		android:label="MineWorld"
+		android:launchMode="singleTask"
+		android:configChanges="orientation|keyboardHidden"
+		android:screenOrientation="landscape"
+		android:clearTaskOnLaunch="true">
+		<intent-filter>
+			<action android:name="android.intent.action.MAIN" />
+			<category android:name="android.intent.category.LAUNCHER" />
+		</intent-filter>
+		<meta-data android:name="android.app.lib_name" android:value="minetest" />
+	</activity>
+	                <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+	<activity android:name=".MinetestTextEntry"
+		android:theme="@style/Theme.Transparent"
+		android:excludeFromRecents="true">
+	</activity>
+	<activity android:name=".MinetestAssetCopy"
+		android:theme="@style/Theme.Transparent"
+		android:excludeFromRecents="true">
+	</activity>
+	</application>
+</manifest>
