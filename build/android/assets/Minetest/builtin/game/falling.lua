@@ -168,7 +168,7 @@ function nodeupdate_single(p, delay)
 			if delay then
 				core.after(0.1, nodeupdate_single, {x=p.x, y=p.y, z=p.z}, false)
 			else
-				n.level = core.env:get_node_level(p)
+				n.level = core.get_node_level(p)
 				core.remove_node(p)
 				spawn_falling_node(p, n)
 				nodeupdate(p)
